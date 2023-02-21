@@ -1,24 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
-
+import PostForm from './components/PostForm';
+import Postlist from './components/Postlist';
+// import ClickCounterTwo from './page/ClickCounterTwo';
+// import ComponentC from './page/ComponentC';
+// import ComponentF from './page/ComponentF';
+// import Counter from './page/Counter';
+// import HoverMouse from './page/HoverMouse';
+// import User from './page/User';
+// import { UserProvider } from './page/UserContext';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='input'>
+      <PostForm/>
+      {/* <Postlist/> */}
+
+
+
+
+      {/* <UserProvider value="Sakib ">
+        <ComponentC/>
+      </UserProvider> */}
+      {/* <Counter
+      render={(count,incrementCount)=>(
+        <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+      )}/>
+      
+      <Counter
+      render={(count,incrementCount)=>(
+        <HoverMouse count={count} incrementCount={incrementCount}/>
+      )}/> */}
+      {/* <ClickCounterTwo/>
+      <HoverMouse/>
+      <User render={(isLoggedIn)=>isLoggedIn?"sakib":"user"}/> */}
+      {/* <ClickCounter name="Sakib "/>
+      <HoverCounter name="sakib sarker "/> */}
+      {/* <ErrorBoundary>
+      <Hero heroName="Batman"/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+      <Hero heroName="Superman"/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+      <Hero heroName="Joker"/>
+      </ErrorBoundary> */}
     </div>
+    
   );
 }
 
